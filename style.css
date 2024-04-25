@@ -8,6 +8,9 @@ main{
 p{
  font-family:"Zen Maru Gothic";
 }
+img{
+max-width:100%;
+}
 /*header-----*/
 header{
  background-image:url(images/vegetable.jpg);
@@ -287,15 +290,12 @@ footer p {
  text-align: center;
 }
 @media(max-width:600px){
-  .img{
-    width:5%;
-   }
   /*header*/  
 #header{
  height: 180%;
   } 
 header h1{
- font-size:400%;
+ font-size:300%;
 }
 .menu{
  padding-top:50%;

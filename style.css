@@ -1,0 +1,344 @@
+@charset "UTF-8";
+html{
+font-size:100%;
+}
+main{
+ background:#E5D8B2;
+}
+p{
+ font-family:"Zen Maru Gothic";
+}
+/*header-----*/
+header{
+ background-image:url(images/vegetable.jpg);
+ background-size: cover;
+ min-height: 100vh;
+}
+header h1{
+ font-size:500%;
+ font-family:"Kiwi Maru";
+ margin: 0 auto;
+ padding: 0 4%; 
+}
+header a{
+ text-decoration: none;
+ color:white;
+}
+header p{
+ font-size:150%;
+ color:white;
+ padding-top:2%;
+ padding-left:4%; 
+}
+.menu a{
+ font-size:150%;
+ color:white;
+ font-family:"Zen Maru Gothic";
+ text-decoration: none;
+}
+.menu{
+list-style:none;
+padding-top:10%;
+padding-left:4%; 
+}
+.vegetable{
+ padding-top:2%;
+}
+.voice{
+ padding-top:2%;
+}
+.contact{
+ padding-top:2%;
+}
+.menu a:hover{ 
+ color:#F79428;
+}
+ /*about-----*/
+#about{
+text-align: center;
+padding-top:7%;
+}
+#about h1{
+ color:#34AA18;
+ font-size:200%;
+ font-family:"Kaisei Tokumin";
+ }
+ #about h2{
+ color:#F79428;
+ font-size:170%;
+ font-family:"Kiwi Maru";
+ text-align: center;
+}
+.product{
+  margin:center;
+}
+.concept{
+    text-align: center;
+    font-size:100%;
+    font-family:"Zen Maru Gothic";
+    padding-top:3%;
+    padding-bottom:2%;
+  }
+#about p{
+ text-align: center;
+ padding-top:1%;
+}
+
+ /*vegetable-----*/
+#vegetable{
+ text-align: center;
+ padding-top:7%;
+}
+#vegetable h1{
+ font-size:200%;
+ color:#34AA18;
+ font-family:"Kaisei Tokumin";
+ padding-bottom:3%;
+}
+.container{
+  height: 400px;
+  position: relative;
+ }
+ #vegetable p{
+ padding-top:1%;
+ } 
+.image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+ background-size: cover;
+ background-position: center center;       
+ animation: image-switch-animation 25s infinite;
+}
+@keyframes image-switch-animation {
+ 0%{ opacity: 0;}
+ 5%{ opacity: 1;}
+ 25%{ opacity: 1;}
+ 30%{ opacity: 0;}
+ 100%{ opacity: 0;}
+}
+.image:nth-of-type(1) {
+ animation-delay: 0s;
+}
+.image:nth-of-type(2) {
+ animation-delay: 5s;
+}
+.image:nth-of-type(3) {
+ animation-delay: 10s;
+}
+.image:nth-of-type(4) {
+ animation-delay: 15s;
+}
+.image:nth-of-type(5) {
+ animation-delay: 20s;
+}
+ /*voice-----*/
+ #voice{
+ padding-top:7%;
+ }
+ #voice h1{
+ font-size:200%;
+ color:#34AA18;
+ font-family:"Kaisei Tokumin";
+ text-align: center;
+ padding-bottom:3%;
+}
+.nouka{
+ display:flex;
+ padding: 0 10%; 
+}
+.nouka-k.o{
+ padding-right:5%;
+}
+.nouka-j.f{
+ padding-left:5%;
+}
+.comment{
+  text-align: center;
+  font-size:100%;
+  font-family:"Zen Maru Gothic";
+  padding-bottom:3%;
+}
+#voice p{
+ text-align: center;
+ padding:3%;
+ }
+/*contact-----*/
+#contact{
+ text-align: center;
+ padding:7%;
+
+}
+#contact h1{
+ font-size:200%;
+ color:#34AA18;
+ font-family:"Kaisei Tokumin";
+ padding-bottom:5%;
+}
+.button{
+  font-family:"Zen Maru Gothic";
+  background:#F79428;
+  color:black;
+  border-radius: 5px;
+  padding: 18px 32px;
+  text-decoration: none;
+}
+.button:hover{
+  opacity: 0.6;
+}
+ /*contact.html-----*/
+ .contact-text h2{
+ padding:5%;
+ font-size:120%;
+ }
+.form{
+  font-family:"Zen Maru Gothic";
+}
+  form div{
+    display: block; 
+    margin-top: 0em;   
+    }
+    label{
+     font-size:1rem;
+     margin:10px;
+     display:block;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea{
+     background:rgba(255,255,255,.5); 
+     border:1px #ffff solid;
+     border-radius:5px;   
+     padding:10px;
+     font-size:1rem;
+     font-family:"inter";
+     text-align: center;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"]{
+     width:100%;
+     max-width:240px;
+     font-family:"inter";
+    }
+    textarea{
+     width:100%;
+     max-width:240px;
+     height:6rem;
+    }
+    input[type="submit"]{
+     border:none;
+     cursor: pointer;
+     line-height:1;    
+    }
+    .contact-text{
+      text-align: center;
+      font-family:"Zen Maru Gothic";
+    }
+    .button-soushin{
+     font-family:"Zen Maru Gothic";
+     background:#F79428;
+     color:black;
+     border-radius: 5px;
+     padding: 15px 40px;
+     text-decoration: none; 
+     margin:3%;
+     font-size:1rem;
+    }
+  /*address/map-----*/
+
+/*店舗情報・地図*/
+#location{
+  padding:4% 0;  
+ }
+ #location .wrapper{
+  display:flex;
+  justify-content:space-between;
+ }
+ .location-info{
+  width:22%;
+ }
+ .location-info p{
+  padding-top:5%;
+ }
+ .location-map{
+  width:74%;
+ }
+ .wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+ }
+ .sub-title{
+font-family:"Zen Maru Gothic";
+ }
+ /*footer-----*/
+footer{
+ background:#34AA18;
+ text-align: center;
+ padding: 26px 0;
+}
+footer p {
+ color: #fff;
+ font-size: 0.875rem;
+ text-align: center;
+}
+@media(max-width:600px){
+  .img{
+    width:5%;
+   }
+  /*header*/  
+#header{
+ height: 180%;
+  } 
+header h1{
+ font-size:400%;
+}
+.menu{
+ padding-top:50%;
+ padding-bottom:30%;
+}
+.vegetable{
+  padding-top:10%;
+ }
+ .voice{
+  padding-top:10%;
+ }
+ .contact{
+  padding-top:10%;
+ }
+   /*about*/  
+ #about{
+  padding-top:30%;
+  }
+   /*vegetable*/  
+ #vegetable{
+  padding-top:30%;
+  }
+   /*voice*/  
+ #voice{
+  padding-top:30%;
+  }
+  .nouka{
+   display:block;
+  }
+  /*contact*/  
+ #contact{
+  padding-top:20%;
+  padding-bottom:20%;
+  }
+ #contact h1{
+  padding-bottom:15%;
+  }
+   /*contact.html-----*/
+ #location .wrapper{
+    flex-direction: column;
+  }
+   .location-info,
+   .location-map{
+    width:100%;
+   }
+  }

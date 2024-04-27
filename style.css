@@ -259,8 +259,6 @@ padding-top:7%;
      font-size:1rem;
     }
   /*address/map-----*/
-
-/*店舗情報・地図*/
 #location{
   padding:4% 0;  
  }
@@ -281,8 +279,16 @@ padding-top:7%;
   max-width: 1100px;
   margin: 0 auto;
  }
- .sub-title{
-font-family:"Zen Maru Gothic";
+ .product-name{
+  font-family:"Zen Maru Gothic";
+  padding: 0 2px 2px;
+  border-bottom: 2px #34AA18 solid;
+ }
+ .vegefoods{
+  font-family:"Zen Maru Gothic";
+ }
+ iframe{
+ width:100%;
  }
  /*footer-----*/
 footer{
@@ -368,18 +374,36 @@ header h1{
    }
   /*contact*/  
  #contact{
-  padding-top:20%;
+  padding-top:100%;
   padding-bottom:20%;
   }
  #contact h1{
   padding-bottom:15%;
   }
    /*contact.html-----*/
- #location .wrapper{
+   #location .wrapper{
     flex-direction: column;
-  }
+   }
    .location-info,
    .location-map{
     width:100%;
    }
+   iframe{
+    width:100%;
+    }
+    .vegefoods{
+    text-align: center;
+    padding-top:30%;
+    }
+    .product-name{
+      position: absolute;
+      left:50%;
+      top:173%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    #location p{
+     text-align:center;
+     padding-bottom:5%;
+    }
   }

@@ -411,6 +411,9 @@ header h1{
  #contact h1{
   padding-bottom:15%;
   }
+  .button{
+   font-size: 90%;
+  }
    /*contact.html-----*/
    #location .wrapper{
     flex-direction: column;

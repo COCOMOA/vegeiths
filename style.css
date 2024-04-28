@@ -8,8 +8,11 @@ main{
 p{
  font-family:"Zen Maru Gothic";
 }
+p span{
+  display: inline-block;
+}
 img{
-max-width:100%;
+max-width:500%;
 }
 .pc-br{
  display:block;
@@ -69,28 +72,33 @@ padding-top:7%;
 }
 #about h1{
  color:#34AA18;
- font-size:200%;
+ font-size:350%;
  font-family:"Kaisei Tokumin";
  }
  #about h2{
  color:#F79428;
- font-size:170%;
+ font-size:300%;
  font-family:"Kiwi Maru";
  text-align: center;
+}
+#about p{
+ font-size:100%;
+ padding-top:3%;
 }
 .product{
   margin:center;
 }
 .concept{
     text-align: center;
-    font-size:100%;
+    font-size:150%;
     font-family:"Zen Maru Gothic";
     padding-top:3%;
     padding-bottom:2%;
   }
 #about p{
  text-align: center;
- padding-top:1%;
+ font-size:150%;
+ padding-top:2%;
 }
 
  /*vegetable-----*/
@@ -99,7 +107,7 @@ padding-top:7%;
  padding-top:7%;
 }
 #vegetable h1{
- font-size:200%;
+ font-size:350%;
  color:#34AA18;
  font-family:"Kaisei Tokumin";
  padding-bottom:3%;
@@ -109,7 +117,8 @@ padding-top:7%;
   position: relative;
  }
  #vegetable p{
- padding-top:1%;
+ font-size:150%;
+ padding-top:3%;
  } 
 .image {
   position: absolute;
@@ -149,7 +158,7 @@ padding-top:7%;
  padding-top:7%;
  }
  #voice h1{
- font-size:200%;
+ font-size:350%;
  color:#34AA18;
  font-family:"Kaisei Tokumin";
  text-align: center;
@@ -167,28 +176,29 @@ padding-top:7%;
 }
 .comment{
   text-align: center;
-  font-size:100%;
+  font-size:150%;
   font-family:"Zen Maru Gothic";
   padding-bottom:3%;
 }
 #voice p{
  text-align: center;
- padding:3%;
+ font-size:150%;
+ padding-top:3%;
  }
 /*contact-----*/
 #contact{
  text-align: center;
  padding:7%;
-
 }
 #contact h1{
- font-size:200%;
+ font-size:300%;
  color:#34AA18;
  font-family:"Kaisei Tokumin";
  padding-bottom:5%;
 }
 .button{
   font-family:"Zen Maru Gothic";
+  font-size: 150%;
   background:#F79428;
   color:black;
   border-radius: 5px;
@@ -201,9 +211,10 @@ padding-top:7%;
  /*contact.html-----*/
  .contact-text h2{
  padding:5%;
- font-size:120%;
+ font-size:150%;
  }
 .form{
+  font-size:150%;
   font-family:"Zen Maru Gothic";
 }
   form div{
@@ -211,7 +222,7 @@ padding-top:7%;
     margin-top: 0em;   
     }
     label{
-     font-size:1rem;
+     font-size:1.2rem;
      margin:10px;
      display:block;
     }
@@ -246,17 +257,18 @@ padding-top:7%;
     }
     .contact-text{
       text-align: center;
+      font-size:120%;
       font-family:"Zen Maru Gothic";
     }
     .button-soushin{
      font-family:"Zen Maru Gothic";
+     font-size:1.2rem;
      background:#F79428;
      color:black;
      border-radius: 5px;
      padding: 15px 40px;
      text-decoration: none; 
      margin:3%;
-     font-size:1rem;
     }
   /*address/map-----*/
 #location{
@@ -271,6 +283,7 @@ padding-top:7%;
  }
  .location-info p{
   padding-top:5%;
+  font-size:120%;
  }
  .location-map{
   width:74%;
@@ -281,11 +294,13 @@ padding-top:7%;
  }
  .make{
   font-family:"Zen Maru Gothic";
+  font-size:150%;
   padding: 0 2px 2px;
   border-bottom: 2px #34AA18 solid;
  }
  .vegefoods{
   font-family:"Zen Maru Gothic";
+  font-size:150%;
  }
  iframe{
  width:100%;
@@ -302,6 +317,9 @@ footer p {
  text-align: center;
 }
 @media(max-width:600px){
+  img{
+    max-width:100%;
+    }
   .pc-br{
     display:none;
    }
@@ -332,15 +350,23 @@ header h1{
  #about{
   padding-top:30%;
   }
-  #about p{
-    text-align: center;
-    padding-top:5%;
-   }
+ #about h1{
+ font-size:300%;
+ }
+ .concept{
+ font-size:100%;
+ padding:5%;
+ }
+ #about p{
+  font-size:90%;
+  text-align: center;
+  }
    /*vegetable*/  
  #vegetable{
   padding-top:30%;
   }
   #vegetable h1{
+   font-size:300%;
    padding-bottom:10%;
   }
   .container{
@@ -348,17 +374,22 @@ header h1{
     position: relative;
    }
    #vegetable p{
-    padding-top:5%;
+    font-size:90%;
     } 
    /*voice*/  
  #voice{
   padding-top:30%;
   }
   #voice h1{
+  font-size:300%;
   padding-bottom:10%;
   }
+  #voice p{
+  font-size:90%;
+  }
   .comment{
-    padding-bottom:5%; 
+   font-size:100%;
+   padding:5%;
   }
   .nouka{
    display:block;
@@ -398,7 +429,7 @@ header h1{
     .make{
       position: absolute;
       left:50%;
-      top:173%;
+      top:180%;
       transform: translateX(-50%);
       text-align: center;
     }
